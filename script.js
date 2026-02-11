@@ -301,11 +301,13 @@ function checkAnswer(selectedAnswer, button) {
         score++;
         button.classList.add('correct');
         feedbackDiv.textContent = `✓ Correct! This is ${currentGrape.name}.`;
-        feedbackDiv.className = 'feedback correct';
+        feedbackDiv.classList.remove('incorrect');
+        feedbackDiv.classList.add('feedback', 'correct');
     } else {
         button.classList.add('incorrect');
         feedbackDiv.textContent = `✗ Incorrect. The correct answer is ${currentGrape.name}.`;
-        feedbackDiv.className = 'feedback incorrect';
+        feedbackDiv.classList.remove('correct');
+        feedbackDiv.classList.add('feedback', 'incorrect');
         
         // Highlight correct answer
         optionButtons.forEach(btn => {
