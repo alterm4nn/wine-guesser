@@ -37,7 +37,7 @@ const grapeVarieties = [
             "Medium acidity",
             "Fruit-forward profile",
             "Approachable when young",
-            "Parent grape of Cabernet Sauvignon",
+            "One of Bordeaux's key blending grapes",
             "Ripens earlier than Cabernet Sauvignon"
         ],
         aromas: [
@@ -268,7 +268,7 @@ const grapeVarieties = [
             "Smoother tannins than Cabernet Sauvignon",
             "High, refreshing acidity",
             "Bright ruby to garnet color",
-            "Parent grape of Cabernet Sauvignon and Merlot",
+            "Parent grape of Cabernet Sauvignon",
             "Ripens a week earlier than Cabernet Sauvignon",
             "Excellent food-pairing wine"
         ],
@@ -351,7 +351,7 @@ const grapeVarieties = [
             "Medium, balancing acidity",
             "Deeply colored",
             "High alcohol content (14-16%)",
-            "Genetically identical to Zinfandel",
+            "Same grape as Zinfandel, Italian expression",
             "Sun-ripened southern Italian style"
         ],
         aromas: [
