@@ -5,7 +5,7 @@ An interactive web application for learning and testing your knowledge of classi
 ## Features
 
 - **Interactive Quiz Game**: Test your knowledge by identifying grape varieties based on their characteristics and aromas
-- **10 Popular Red Wine Grapes**: Learn about the most iconic red wine grape varieties from around the world
+- **14 Popular Red Wine Grapes**: Learn about the most iconic red wine grape varieties from around the world
 - **Comprehensive Reference Guide**: Detailed information about each grape variety including:
   - Origin
   - Body, tannins, and acidity levels
@@ -26,6 +26,10 @@ An interactive web application for learning and testing your knowledge of classi
 8. **Tempranillo** - Spain's noble grape from Rioja
 9. **Grenache (Garnacha)** - Fruity and versatile from Spain
 10. **Nebbiolo** - Powerful and age-worthy from Piedmont
+11. **Cabernet Franc** - Parent of Cabernet Sauvignon, savory and herbal
+12. **Pinotage** - South Africa's unique signature grape
+13. **Mourvèdre (Monastrell)** - Bold Mediterranean variety
+14. **Primitivo** - Italian Zinfandel from sunny Puglia
 
 ## How to Use
 

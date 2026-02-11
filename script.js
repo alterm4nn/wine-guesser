@@ -11,7 +11,9 @@ const grapeVarieties = [
             "High acidity",
             "Dark purple color",
             "Age-worthy wines",
-            "Often aged in oak barrels"
+            "Often aged in oak barrels",
+            "Natural cross of Cabernet Franc and Sauvignon Blanc",
+            "Can age 10-50 years for top examples"
         ],
         aromas: [
             "Blackcurrant",
@@ -34,7 +36,9 @@ const grapeVarieties = [
             "Soft, velvety tannins",
             "Medium acidity",
             "Fruit-forward profile",
-            "Approachable when young"
+            "Approachable when young",
+            "One of Bordeaux's key blending grapes",
+            "Ripens earlier than Cabernet Sauvignon"
         ],
         aromas: [
             "Plum",
@@ -57,7 +61,9 @@ const grapeVarieties = [
             "Low to medium tannins",
             "High acidity",
             "Translucent ruby color",
-            "Delicate and elegant"
+            "Delicate and elegant",
+            "Thin-skinned grape sensitive to terroir",
+            "Silky, velvety mouthfeel"
         ],
         aromas: [
             "Strawberry",
@@ -81,7 +87,9 @@ const grapeVarieties = [
             "Medium to high tannins",
             "Medium to high acidity",
             "Deep purple color",
-            "Varies by climate"
+            "Varies by climate",
+            "Known as Shiraz in Australia",
+            "Cooler climates produce elegant, peppery wines"
         ],
         aromas: [
             "Blackberry",
@@ -105,7 +113,9 @@ const grapeVarieties = [
             "Medium to high tannins",
             "Medium acidity",
             "Inky dark color",
-            "Jammy fruit character"
+            "Jammy fruit character",
+            "Argentina rescued it from near-extinction",
+            "Known as 'Black Wine' in Cahors"
         ],
         aromas: [
             "Blackberry",
@@ -129,7 +139,9 @@ const grapeVarieties = [
             "Medium tannins",
             "Medium acidity",
             "Often high alcohol",
-            "Bold and fruity"
+            "Bold and fruity",
+            "Genetically identical to Italian Primitivo",
+            "Can produce both jammy reds and rosé"
         ],
         aromas: [
             "Blackberry",
@@ -152,7 +164,9 @@ const grapeVarieties = [
             "High tannins",
             "High acidity",
             "Bright red color",
-            "Savory notes"
+            "Savory notes",
+            "The primary grape in Chianti wines",
+            "Produces both everyday and age-worthy wines"
         ],
         aromas: [
             "Cherry",
@@ -176,7 +190,9 @@ const grapeVarieties = [
             "Medium to high tannins",
             "Medium to high acidity",
             "Responds well to oak",
-            "Spain's noble grape"
+            "Spain's noble grape",
+            "Name means 'early' in Spanish (early-ripening)",
+            "Backbone of Rioja and Ribera del Duero wines"
         ],
         aromas: [
             "Cherry",
@@ -200,7 +216,9 @@ const grapeVarieties = [
             "Low to medium tannins",
             "Medium acidity",
             "Fruity and spicy",
-            "Excellent for blending"
+            "Excellent for blending",
+            "Known as Garnacha in Spain",
+            "Key component of Châteauneuf-du-Pape"
         ],
         aromas: [
             "Strawberry",
@@ -223,7 +241,9 @@ const grapeVarieties = [
             "Very high tannins",
             "Very high acidity",
             "Pale garnet color",
-            "Exceptional aging potential"
+            "Exceptional aging potential",
+            "Creates legendary Barolo and Barbaresco",
+            "Name derives from 'nebbia' (fog) in Italian"
         ],
         aromas: [
             "Rose",
@@ -236,6 +256,115 @@ const grapeVarieties = [
             "Dried herbs"
         ],
         description: "Creates Barolo and Barbaresco, powerful wines with incredible aging potential"
+    },
+    {
+        name: "Cabernet Franc",
+        origin: "Loire Valley & Bordeaux, France",
+        body: "Medium-bodied",
+        tannins: "Medium to Medium-High",
+        acidity: "High",
+        characteristics: [
+            "Medium-bodied with zesty acidity",
+            "Smoother tannins than Cabernet Sauvignon",
+            "High, refreshing acidity",
+            "Bright ruby to garnet color",
+            "Parent grape of Cabernet Sauvignon",
+            "Ripens a week earlier than Cabernet Sauvignon",
+            "Excellent food-pairing wine"
+        ],
+        aromas: [
+            "Strawberry",
+            "Raspberry",
+            "Red cherry",
+            "Green bell pepper",
+            "Violet",
+            "Graphite",
+            "Tobacco",
+            "Herbs"
+        ],
+        description: "Parent grape of Cabernet Sauvignon, known for savory aromatics and herbal notes"
+    },
+    {
+        name: "Pinotage",
+        origin: "South Africa",
+        body: "Full-bodied",
+        tannins: "Medium-High to High",
+        acidity: "Medium to Medium-High",
+        characteristics: [
+            "Full-bodied and bold",
+            "Medium-high to high tannins",
+            "Medium to medium-high acidity",
+            "Deep, dark color",
+            "Uniquely South African creation",
+            "Cross of Pinot Noir and Cinsault (Hermitage)",
+            "Created in 1925, South Africa's signature grape"
+        ],
+        aromas: [
+            "Blackberry",
+            "Black cherry",
+            "Plum",
+            "Smoke",
+            "Tobacco",
+            "Coffee",
+            "Chocolate",
+            "Earth"
+        ],
+        description: "South Africa's signature grape, bold and smoky with unique character"
+    },
+    {
+        name: "Mourvèdre",
+        origin: "Spain (famous in Bandol, France)",
+        body: "Full-bodied",
+        tannins: "High",
+        acidity: "Medium to Medium-Plus",
+        characteristics: [
+            "Full-bodied and powerful",
+            "High, grippy tannins",
+            "Medium to medium-plus acidity",
+            "Deep, dark color",
+            "Requires hot climate to ripen",
+            "Known as Monastrell in Spain, Mataro in Australia",
+            "Key component of GSM blends with Grenache and Syrah"
+        ],
+        aromas: [
+            "Blackberry",
+            "Black plum",
+            "Blueberry",
+            "Herbs",
+            "Black pepper",
+            "Violet",
+            "Game",
+            "Leather",
+            "Earth"
+        ],
+        description: "Bold Mediterranean grape, adds structure and savory depth to blends"
+    },
+    {
+        name: "Primitivo",
+        origin: "Puglia, Italy",
+        body: "Full-bodied",
+        tannins: "Medium to High",
+        acidity: "Medium",
+        characteristics: [
+            "Full-bodied and rich",
+            "Medium to high tannins",
+            "Medium, balancing acidity",
+            "Deeply colored",
+            "High alcohol content (14-16%)",
+            "Same grape as Zinfandel, Italian expression",
+            "Sun-ripened southern Italian style"
+        ],
+        aromas: [
+            "Blackberry",
+            "Black cherry",
+            "Plum",
+            "Blueberry",
+            "Dark chocolate",
+            "Licorice",
+            "Black pepper",
+            "Sweet tobacco"
+        ],
+        description: "Italian cousin of Zinfandel, bold and fruit-forward from Puglia's sunshine"
     }
 ];
 
