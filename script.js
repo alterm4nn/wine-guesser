@@ -2,6 +2,10 @@
 const grapeVarieties = [
     {
         name: "Cabernet Sauvignon",
+        origin: "Bordeaux, France",
+        body: "Full-bodied",
+        tannins: "High",
+        acidity: "Medium to High",
         characteristics: [
             "Full-bodied with firm tannins",
             "High acidity",
@@ -16,10 +20,15 @@ const grapeVarieties = [
             "Tobacco",
             "Green bell pepper",
             "Mint"
-        ]
+        ],
+        description: "Known as the \"king of red wine grapes,\" produces age-worthy wines with firm tannins and complex flavors"
     },
     {
         name: "Merlot",
+        origin: "Bordeaux, France",
+        body: "Medium to Full-bodied",
+        tannins: "Medium",
+        acidity: "Medium",
         characteristics: [
             "Medium to full-bodied",
             "Soft, velvety tannins",
@@ -34,10 +43,15 @@ const grapeVarieties = [
             "Vanilla",
             "Clove",
             "Bay leaf"
-        ]
+        ],
+        description: "Softer and more approachable than Cabernet Sauvignon, with velvety texture and fruit-forward profile"
     },
     {
         name: "Pinot Noir",
+        origin: "Burgundy, France",
+        body: "Light to Medium-bodied",
+        tannins: "Low to Medium",
+        acidity: "High",
         characteristics: [
             "Light to medium-bodied",
             "Low to medium tannins",
@@ -51,11 +65,17 @@ const grapeVarieties = [
             "Cherry",
             "Mushroom",
             "Truffle",
-            "Rose petals"
-        ]
+            "Rose",
+            "Wet leaves"
+        ],
+        description: "Elegant and delicate, often described as the most romantic and frustrating grape to grow"
     },
     {
         name: "Syrah",
+        origin: "Rhône Valley, France",
+        body: "Full-bodied",
+        tannins: "Medium to High",
+        acidity: "Medium to High",
         characteristics: [
             "Full-bodied and bold",
             "Medium to high tannins",
@@ -69,11 +89,17 @@ const grapeVarieties = [
             "Black pepper",
             "Smoke",
             "Grilled meat",
-            "Olive"
-        ]
+            "Olive",
+            "Lavender"
+        ],
+        description: "Bold and spicy, expressing different characters in cool vs warm climates"
     },
     {
         name: "Malbec",
+        origin: "Cahors, France (now famous in Argentina)",
+        body: "Full-bodied",
+        tannins: "Medium to High",
+        acidity: "Medium",
         characteristics: [
             "Full-bodied and rich",
             "Medium to high tannins",
@@ -87,11 +113,17 @@ const grapeVarieties = [
             "Black cherry",
             "Cocoa",
             "Leather",
+            "Tobacco",
             "Violet"
-        ]
+        ],
+        description: "Rich and jammy with inky dark color, Argentina's signature grape"
     },
     {
         name: "Zinfandel",
+        origin: "Croatia (famous in California, USA)",
+        body: "Medium to Full-bodied",
+        tannins: "Medium",
+        acidity: "Medium",
         characteristics: [
             "Medium to full-bodied",
             "Medium tannins",
@@ -106,10 +138,15 @@ const grapeVarieties = [
             "Licorice",
             "Black pepper",
             "Tobacco"
-        ]
+        ],
+        description: "Bold and fruity, often with higher alcohol content and spicy notes"
     },
     {
         name: "Sangiovese",
+        origin: "Tuscany, Italy",
+        body: "Medium to Full-bodied",
+        tannins: "High",
+        acidity: "High",
         characteristics: [
             "Medium to full-bodied",
             "High tannins",
@@ -123,11 +160,17 @@ const grapeVarieties = [
             "Tomato leaf",
             "Herbs",
             "Balsamic",
+            "Leather",
             "Tea"
-        ]
+        ],
+        description: "The heart of Chianti, known for bright acidity and savory notes"
     },
     {
         name: "Tempranillo",
+        origin: "Rioja, Spain",
+        body: "Medium to Full-bodied",
+        tannins: "Medium to High",
+        acidity: "Medium to High",
         characteristics: [
             "Medium to full-bodied",
             "Medium to high tannins",
@@ -141,11 +184,17 @@ const grapeVarieties = [
             "Tomato",
             "Leather",
             "Vanilla",
+            "Dill",
             "Tobacco"
-        ]
+        ],
+        description: "Spain's noble grape, responds well to oak aging"
     },
     {
         name: "Grenache",
+        origin: "Spain (famous in Southern Rhône, France)",
+        body: "Medium to Full-bodied",
+        tannins: "Low to Medium",
+        acidity: "Medium",
         characteristics: [
             "Medium to full-bodied",
             "Low to medium tannins",
@@ -160,10 +209,15 @@ const grapeVarieties = [
             "White pepper",
             "Herbs",
             "Orange peel"
-        ]
+        ],
+        description: "Fruity and spicy, often blended but excellent on its own"
     },
     {
         name: "Nebbiolo",
+        origin: "Piedmont, Italy",
+        body: "Full-bodied",
+        tannins: "Very High",
+        acidity: "Very High",
         characteristics: [
             "Full-bodied and powerful",
             "Very high tannins",
@@ -177,8 +231,11 @@ const grapeVarieties = [
             "Cherry",
             "Truffle",
             "Leather",
-            "Anise"
-        ]
+            "Anise",
+            "Tobacco",
+            "Dried herbs"
+        ],
+        description: "Creates Barolo and Barbaresco, powerful wines with incredible aging potential"
     }
 ];
 
@@ -360,5 +417,35 @@ nextBtn.addEventListener('click', nextQuestion);
 restartBtn.addEventListener('click', initGame);
 playAgainBtn.addEventListener('click', initGame);
 
+// Render reference guide from data
+function renderReferenceGuide() {
+    const grapeGrid = document.querySelector('.grape-grid');
+    if (!grapeGrid) return;
+    
+    grapeGrid.innerHTML = '';
+    
+    grapeVarieties.forEach(grape => {
+        const card = document.createElement('div');
+        card.className = 'grape-card';
+        
+        const aromasText = grape.aromas.join(', ');
+        
+        card.innerHTML = `
+            <h3>${grape.name}</h3>
+            <div class="grape-details">
+                <p><strong>Origin:</strong> ${grape.origin}</p>
+                <p><strong>Body:</strong> ${grape.body}</p>
+                <p><strong>Tannins:</strong> ${grape.tannins}</p>
+                <p><strong>Acidity:</strong> ${grape.acidity}</p>
+                <p><strong>Key Aromas:</strong> ${aromasText}</p>
+                <p><strong>Characteristics:</strong> ${grape.description}</p>
+            </div>
+        `;
+        
+        grapeGrid.appendChild(card);
+    });
+}
+
 // Start the game on page load
 initGame();
+renderReferenceGuide();

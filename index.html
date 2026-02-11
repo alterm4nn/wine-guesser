@@ -16,7 +16,7 @@
         <div class="game-container">
             <div class="score-section">
                 <div class="score">Score: <span id="score">0</span>/<span id="total">0</span></div>
-                <button id="restart-btn" class="btn btn-secondary">Restart Game</button>
+                <button type="button" id="restart-btn" class="btn btn-secondary">Restart Game</button>
             </div>
 
             <div id="question-card" class="question-card">
@@ -30,20 +30,20 @@
                     <ul id="aromas-list"></ul>
                 </div>
                 <div class="options">
-                    <button class="option-btn" data-index="0">Option 1</button>
-                    <button class="option-btn" data-index="1">Option 2</button>
-                    <button class="option-btn" data-index="2">Option 3</button>
-                    <button class="option-btn" data-index="3">Option 4</button>
+                    <button type="button" class="option-btn" data-index="0">Option 1</button>
+                    <button type="button" class="option-btn" data-index="1">Option 2</button>
+                    <button type="button" class="option-btn" data-index="2">Option 3</button>
+                    <button type="button" class="option-btn" data-index="3">Option 4</button>
                 </div>
                 <div id="feedback" class="feedback hidden"></div>
-                <button id="next-btn" class="btn btn-primary hidden">Next Question</button>
+                <button type="button" id="next-btn" class="btn btn-primary hidden">Next Question</button>
             </div>
 
             <div id="results-card" class="results-card hidden">
                 <h2>Game Complete! 🎉</h2>
                 <p class="final-score">Your Score: <span id="final-score"></span></p>
                 <p class="final-message" id="final-message"></p>
-                <button id="play-again-btn" class="btn btn-primary">Play Again</button>
+                <button type="button" id="play-again-btn" class="btn btn-primary">Play Again</button>
             </div>
         </div>
 
@@ -51,127 +51,7 @@
             <h2>Red Wine Grape Varieties Reference Guide</h2>
             <p class="reference-intro">Learn about the 10 most popular red wine grape varieties</p>
             
-            <div class="grape-grid">
-                <div class="grape-card">
-                    <h3>Cabernet Sauvignon</h3>
-                    <div class="grape-details">
-                        <p><strong>Origin:</strong> Bordeaux, France</p>
-                        <p><strong>Body:</strong> Full-bodied</p>
-                        <p><strong>Tannins:</strong> High</p>
-                        <p><strong>Acidity:</strong> Medium to High</p>
-                        <p><strong>Key Aromas:</strong> Blackcurrant, black cherry, cedar, tobacco, green bell pepper, mint</p>
-                        <p><strong>Characteristics:</strong> Known as the "king of red wine grapes," produces age-worthy wines with firm tannins and complex flavors</p>
-                    </div>
-                </div>
-
-                <div class="grape-card">
-                    <h3>Merlot</h3>
-                    <div class="grape-details">
-                        <p><strong>Origin:</strong> Bordeaux, France</p>
-                        <p><strong>Body:</strong> Medium to Full-bodied</p>
-                        <p><strong>Tannins:</strong> Medium</p>
-                        <p><strong>Acidity:</strong> Medium</p>
-                        <p><strong>Key Aromas:</strong> Plum, black cherry, chocolate, vanilla, clove, bay leaf</p>
-                        <p><strong>Characteristics:</strong> Softer and more approachable than Cabernet Sauvignon, with velvety texture and fruit-forward profile</p>
-                    </div>
-                </div>
-
-                <div class="grape-card">
-                    <h3>Pinot Noir</h3>
-                    <div class="grape-details">
-                        <p><strong>Origin:</strong> Burgundy, France</p>
-                        <p><strong>Body:</strong> Light to Medium-bodied</p>
-                        <p><strong>Tannins:</strong> Low to Medium</p>
-                        <p><strong>Acidity:</strong> High</p>
-                        <p><strong>Key Aromas:</strong> Strawberry, raspberry, cherry, mushroom, truffle, rose, wet leaves</p>
-                        <p><strong>Characteristics:</strong> Elegant and delicate, often described as the most romantic and frustrating grape to grow</p>
-                    </div>
-                </div>
-
-                <div class="grape-card">
-                    <h3>Syrah (Shiraz)</h3>
-                    <div class="grape-details">
-                        <p><strong>Origin:</strong> Rhône Valley, France</p>
-                        <p><strong>Body:</strong> Full-bodied</p>
-                        <p><strong>Tannins:</strong> Medium to High</p>
-                        <p><strong>Acidity:</strong> Medium to High</p>
-                        <p><strong>Key Aromas:</strong> Blackberry, blueberry, black pepper, smoke, grilled meat, olive, lavender</p>
-                        <p><strong>Characteristics:</strong> Bold and spicy, expressing different characters in cool vs warm climates</p>
-                    </div>
-                </div>
-
-                <div class="grape-card">
-                    <h3>Malbec</h3>
-                    <div class="grape-details">
-                        <p><strong>Origin:</strong> Cahors, France (now famous in Argentina)</p>
-                        <p><strong>Body:</strong> Full-bodied</p>
-                        <p><strong>Tannins:</strong> Medium to High</p>
-                        <p><strong>Acidity:</strong> Medium</p>
-                        <p><strong>Key Aromas:</strong> Blackberry, plum, black cherry, cocoa, leather, tobacco, violet</p>
-                        <p><strong>Characteristics:</strong> Rich and jammy with inky dark color, Argentina's signature grape</p>
-                    </div>
-                </div>
-
-                <div class="grape-card">
-                    <h3>Zinfandel</h3>
-                    <div class="grape-details">
-                        <p><strong>Origin:</strong> Croatia (famous in California, USA)</p>
-                        <p><strong>Body:</strong> Medium to Full-bodied</p>
-                        <p><strong>Tannins:</strong> Medium</p>
-                        <p><strong>Acidity:</strong> Medium</p>
-                        <p><strong>Key Aromas:</strong> Blackberry, raspberry, cherry, licorice, black pepper, tobacco</p>
-                        <p><strong>Characteristics:</strong> Bold and fruity, often with higher alcohol content and spicy notes</p>
-                    </div>
-                </div>
-
-                <div class="grape-card">
-                    <h3>Sangiovese</h3>
-                    <div class="grape-details">
-                        <p><strong>Origin:</strong> Tuscany, Italy</p>
-                        <p><strong>Body:</strong> Medium to Full-bodied</p>
-                        <p><strong>Tannins:</strong> High</p>
-                        <p><strong>Acidity:</strong> High</p>
-                        <p><strong>Key Aromas:</strong> Cherry, strawberry, tomato leaf, herbs, balsamic, leather, tea</p>
-                        <p><strong>Characteristics:</strong> The heart of Chianti, known for bright acidity and savory notes</p>
-                    </div>
-                </div>
-
-                <div class="grape-card">
-                    <h3>Tempranillo</h3>
-                    <div class="grape-details">
-                        <p><strong>Origin:</strong> Rioja, Spain</p>
-                        <p><strong>Body:</strong> Medium to Full-bodied</p>
-                        <p><strong>Tannins:</strong> Medium to High</p>
-                        <p><strong>Acidity:</strong> Medium to High</p>
-                        <p><strong>Key Aromas:</strong> Cherry, plum, tomato, leather, vanilla, dill, tobacco</p>
-                        <p><strong>Characteristics:</strong> Spain's noble grape, responds well to oak aging</p>
-                    </div>
-                </div>
-
-                <div class="grape-card">
-                    <h3>Grenache (Garnacha)</h3>
-                    <div class="grape-details">
-                        <p><strong>Origin:</strong> Spain (famous in Southern Rhône, France)</p>
-                        <p><strong>Body:</strong> Medium to Full-bodied</p>
-                        <p><strong>Tannins:</strong> Low to Medium</p>
-                        <p><strong>Acidity:</strong> Medium</p>
-                        <p><strong>Key Aromas:</strong> Strawberry, raspberry, cherry, white pepper, herbs, orange peel</p>
-                        <p><strong>Characteristics:</strong> Fruity and spicy, often blended but excellent on its own</p>
-                    </div>
-                </div>
-
-                <div class="grape-card">
-                    <h3>Nebbiolo</h3>
-                    <div class="grape-details">
-                        <p><strong>Origin:</strong> Piedmont, Italy</p>
-                        <p><strong>Body:</strong> Full-bodied</p>
-                        <p><strong>Tannins:</strong> Very High</p>
-                        <p><strong>Acidity:</strong> Very High</p>
-                        <p><strong>Key Aromas:</strong> Rose, tar, cherry, truffle, leather, anise, tobacco, dried herbs</p>
-                        <p><strong>Characteristics:</strong> Creates Barolo and Barbaresco, powerful wines with incredible aging potential</p>
-                    </div>
-                </div>
-            </div>
+            <div class="grape-grid"></div>
         </div>
 
         <footer>

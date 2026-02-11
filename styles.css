@@ -71,6 +71,11 @@ header h1 {
     letter-spacing: 0.5px;
 }
 
+.btn:focus-visible {
+    outline: 3px solid #4c63d2;
+    outline-offset: 2px;
+}
+
 .btn-primary {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
@@ -156,6 +161,11 @@ header h1 {
     color: white;
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+}
+
+.option-btn:focus-visible {
+    outline: 3px solid #4c63d2;
+    outline-offset: 2px;
 }
 
 .option-btn.correct {
