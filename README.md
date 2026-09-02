@@ -1,11 +1,12 @@
 # 🍷 Wine Grape Variety Guesser
 
-An interactive web application for learning and testing your knowledge of internationally known red grapes and country-specific local wine varieties.
+An interactive web application for learning and testing your knowledge of internationally known red and white grapes plus country-specific local wine varieties.
 
 ## Features
 
 - **Interactive Quiz Game**: Test your knowledge by identifying grape varieties based on their characteristics and aromas
 - **International Reds Quiz**: Learn 14 iconic red wine grape varieties from around the world
+- **International Whites Quiz**: Learn 10 internationally known white wine grape varieties
 - **10 Country Subgames**: Explore local red and white grapes from Spain, Italy, Portugal, France, Greece, Croatia, Hungary, Ukraine, Germany, and Poland
 - **Comprehensive Reference Guide**: Detailed information about each grape variety including:
   - Color
@@ -35,6 +36,19 @@ An interactive web application for learning and testing your knowledge of intern
 12. **Pinotage** - South Africa's unique signature grape
 13. **Mourvèdre (Monastrell)** - Bold Mediterranean variety
 14. **Primitivo** - Italian Zinfandel from sunny Puglia
+
+### International Whites
+
+1. **Chardonnay**
+2. **Sauvignon Blanc**
+3. **Riesling**
+4. **Albariño**
+5. **Pinot Grigio / Pinot Gris**
+6. **Sémillon**
+7. **Chenin Blanc**
+8. **Viognier**
+9. **Gewürztraminer**
+10. **Muscat**
 
 ### Country Subgames
 
