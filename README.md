@@ -2,6 +2,8 @@
 
 An interactive web application for learning and testing your knowledge of internationally known red grapes and country-specific local wine varieties.
 
+Currently published in Github Pages: https://alterm4nn.github.io/wine-guesser/
+
 ## Features
 
 - **Interactive Quiz Game**: Test your knowledge by identifying grape varieties based on their characteristics and aromas
@@ -53,7 +55,7 @@ An interactive web application for learning and testing your knowledge of intern
 
 ### View Online
 
-Visit the live page at: `https://[your-username].github.io/wine-guesser/`
+Visit the live page at: `[https://alterm4nn.github.io/wine-guesser/](https://alterm4nn.github.io/wine-guesser/)`
 
 ### Run Locally
 
