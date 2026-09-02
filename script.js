@@ -12,7 +12,7 @@ const internationalReds = [
             "Age-worthy wines",
             "Often aged in oak barrels",
             "Natural cross of Cabernet Franc and Sauvignon Blanc",
-            "Can age 10-50 years for top examples"
+            "Top examples can age for decades"
         ],
         aromas: [
             "Blackcurrant",
@@ -113,7 +113,7 @@ const internationalReds = [
             "Medium acidity",
             "Inky dark color",
             "Jammy fruit character",
-            "Argentina rescued it from near-extinction",
+            "Plantings expanded dramatically in Argentina after decline in France",
             "Known as 'Black Wine' in Cahors"
         ],
         aromas: [
@@ -268,7 +268,7 @@ const internationalReds = [
             "High, refreshing acidity",
             "Bright ruby to garnet color",
             "Parent grape of Cabernet Sauvignon",
-            "Ripens a week earlier than Cabernet Sauvignon",
+            "Usually ripens earlier than Cabernet Sauvignon",
             "Excellent food-pairing wine"
         ],
         aromas: [
@@ -349,7 +349,7 @@ const internationalReds = [
             "Medium to high tannins",
             "Medium, balancing acidity",
             "Deeply colored",
-            "High alcohol content (14-16%)",
+            "Often high alcohol in warm climates",
             "Same grape as Zinfandel, Italian expression",
             "Sun-ripened southern Italian style"
         ],
@@ -500,7 +500,22 @@ const quizModes = [
         label: "International Reds",
         description: "Classic globally recognized red grapes from the original quiz.",
         intro: "Learn the hallmark aromas and structure of 14 internationally famous red wine grapes.",
-        sources: [],
+        sources: [
+            { label: "Wine-Searcher – Cabernet Sauvignon grape profile", url: "https://www.wine-searcher.com/grape-cabernet-sauvignon" },
+            { label: "Wine-Searcher – Merlot grape profile", url: "https://www.wine-searcher.com/grape-merlot" },
+            { label: "Wine-Searcher – Pinot Noir grape profile", url: "https://www.wine-searcher.com/grape-pinot-noir" },
+            { label: "Wine-Searcher – Syrah grape profile", url: "https://www.wine-searcher.com/grape-syrah" },
+            { label: "Wine-Searcher – Malbec grape profile", url: "https://www.wine-searcher.com/grape-malbec" },
+            { label: "Wine-Searcher – Zinfandel grape profile", url: "https://www.wine-searcher.com/grape-zinfandel" },
+            { label: "Wine-Searcher – Sangiovese grape profile", url: "https://www.wine-searcher.com/grape-sangiovese" },
+            { label: "Wine-Searcher – Tempranillo grape profile", url: "https://www.wine-searcher.com/grape-tempranillo" },
+            { label: "Wine-Searcher – Grenache grape profile", url: "https://www.wine-searcher.com/grape-grenache" },
+            { label: "Wine-Searcher – Nebbiolo grape profile", url: "https://www.wine-searcher.com/grape-nebbiolo" },
+            { label: "Wine-Searcher – Cabernet Franc grape profile", url: "https://www.wine-searcher.com/grape-cabernet-franc" },
+            { label: "Wine-Searcher – Pinotage grape profile", url: "https://www.wine-searcher.com/grape-pinotage" },
+            { label: "Wine-Searcher – Mourvèdre grape profile", url: "https://www.wine-searcher.com/grape-mourvedre" },
+            { label: "Wine-Searcher – Primitivo grape profile", url: "https://www.wine-searcher.com/grape-primitivo" }
+        ],
         grapes: internationalReds
     },
     {
