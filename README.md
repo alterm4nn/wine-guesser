@@ -15,7 +15,7 @@ Currently published in Github Pages: https://alterm4nn.github.io/wine-guesser/
   - Body, tannins, and acidity levels
   - Key aromas and flavor profiles
   - Unique characteristics
-- **Traceable Sources**: Country reference guides include source links for the grape datasets
+- **Traceable Sources**: Reference guides include source links for both international and country grape datasets
 - **Beautiful, Responsive Design**: Works seamlessly on desktop and mobile devices
 - **GitHub Pages Compatible**: Pure HTML, CSS, and JavaScript - no build process required
 
