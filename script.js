@@ -371,6 +371,19 @@ function grape(name, color, origin, body, tannins, acidity, characteristics, aro
     return { name, color, origin, body, tannins, acidity, characteristics, aromas, description };
 }
 
+const internationalWhites = [
+    grape("Chardonnay", "White", "Burgundy, France", "Medium to Full-bodied", "Very Low", "Medium to High", ["One of the world's most planted white grapes", "Can range from unoaked and crisp to rich and oaked", "Adapts strongly to climate and winemaking style", "Core grape for still and sparkling wines"], ["Green apple", "Lemon", "Pineapple", "Butter", "Vanilla"], "A globally important white grape whose style runs from lean and mineral to broad and creamy"),
+    grape("Sauvignon Blanc", "White", "Loire Valley & Bordeaux, France", "Light to Medium-bodied", "Very Low", "High", ["Typically high in acidity", "Often made in fresh stainless-steel styles", "Can show herbal and citrus intensity", "Widely planted in France, New Zealand, and beyond"], ["Gooseberry", "Grapefruit", "Lime", "Cut grass", "Passion fruit"], "A vibrant aromatic white known for piercing freshness and herbal-citrus character"),
+    grape("Riesling", "White", "Germany", "Light to Medium-bodied", "Very Low", "High", ["Naturally high acidity", "Produced in dry through sweet styles", "Transparent to site and climate", "Noted for long aging potential"], ["Lime", "Green apple", "Peach", "Jasmine", "Wet stone"], "A precise and age-worthy white grape famous for aromatic lift and electric acidity"),
+    grape("Albariño", "White", "Rías Baixas, Spain", "Light to Medium-bodied", "Very Low", "High", ["Atlantic coastal variety with saline freshness", "Usually vinified in crisp unoaked styles", "Known for aromatic intensity and bright fruit", "Strong pairing with seafood"], ["Lime", "Peach", "Apricot", "Orange blossom", "Sea spray"], "A zesty Iberian white grape combining citrusy lift with maritime salinity"),
+    grape("Pinot Grigio / Pinot Gris", "White", "France (Alsace) and Northern Italy", "Light to Medium-bodied", "Very Low", "Medium to High", ["Same grape, often styled differently by region", "Pinot Grigio examples are usually lighter and crisp", "Pinot Gris styles can be richer and spicier", "Pinkish skins despite white-wine use"], ["Pear", "Lemon", "White peach", "Melon", "Almond"], "A versatile white variety that ranges from brisk and simple to textured and aromatic"),
+    grape("Sémillon", "White", "Bordeaux, France", "Medium-bodied", "Very Low", "Medium", ["Important in Bordeaux dry and sweet blends", "Thin skins can be susceptible to noble rot", "Often blended with Sauvignon Blanc", "Can gain waxy complexity with bottle age"], ["Lemon", "Pear", "Beeswax", "Honey", "Lanolin"], "A structured white grape used for both fresh blends and world-class botrytized sweet wines"),
+    grape("Chenin Blanc", "White", "Loire Valley, France", "Light to Full-bodied", "Very Low", "High", ["Made in sparkling, dry, off-dry, and sweet styles", "Retains acidity in warm climates", "Can age very well in top examples", "Increasingly important in South Africa"], ["Quince", "Green apple", "Pear", "Honey", "Chamomile"], "A highly adaptable white grape that combines vibrant acidity with broad stylistic range"),
+    grape("Viognier", "White", "Northern Rhône, France", "Full-bodied", "Very Low", "Low to Medium", ["Usually aromatic and full in texture", "Naturally lower acidity than many classic whites", "Best examples balance richness with freshness", "Can be used for co-fermentation in Côte-Rôtie"], ["Apricot", "Peach", "Honeysuckle", "Orange blossom", "Spice"], "A perfumed white grape known for lush stone-fruit flavors and floral richness"),
+    grape("Gewürztraminer", "White", "Alsace, France", "Full-bodied", "Very Low", "Low to Medium", ["Very aromatic variety with distinctive perfume", "Often medium to full-bodied", "Typically lower acidity than Riesling", "Can appear in dry and off-dry styles"], ["Lychee", "Rose", "Ginger", "Orange peel", "Turkish delight"], "An intensely aromatic white grape recognized for exotic floral perfume and spice"),
+    grape("Muscat", "White", "Mediterranean basin (ancient family of varieties)", "Light to Medium-bodied", "Very Low", "Medium", ["Ancient family with many clones and regional names", "One of the most aromatic grape families", "Used for still, sparkling, and fortified wines", "Often vinified in dry to sweet styles"], ["Grapes", "Orange blossom", "Peach", "Citrus", "Honey"], "A highly fragrant grape family that delivers unmistakable floral and grapey aromas across many wine styles")
+];
+
 const spainGrapes = [
     grape("Mencía", "Red", "Bierzo & Ribeira Sacra, Spain", "Medium-bodied", "Medium", "High", ["Perfumed and fresh", "Often grown on steep Atlantic-influenced sites", "Red-fruited with herbal lift", "Can show stony minerality"], ["Sour cherry", "Pomegranate", "Violet", "Black tea", "Herbs"], "A fragrant Spanish red that balances juicy fruit with floral and mineral notes"),
     grape("Bobal", "Red", "Utiel-Requena, Spain", "Full-bodied", "Medium to High", "High", ["Deeply colored skins", "Naturally high acidity", "Handles heat well", "Can make structured but vibrant reds"], ["Blackberry", "Plum", "Violet", "Cocoa", "Mediterranean herbs"], "A powerful local red grape that keeps freshness even in hot inland vineyards"),
@@ -489,6 +502,18 @@ const quizModes = [
         intro: "Learn the hallmark aromas and structure of 14 internationally famous red wine grapes.",
         sources: [],
         grapes: internationalReds
+    },
+    {
+        id: "international-whites",
+        label: "International Whites",
+        description: "Classic globally recognized white grapes from major wine regions.",
+        intro: "Compare ten iconic international white grape varieties by structure, aromas, and regional identity.",
+        sources: [
+            { label: "Wine Folly – 18 Most Common White Wine Varieties", url: "https://winefolly.com/deep-dive/18-most-common-white-wine-varieties/" },
+            { label: "Wine Scholar Guild – International White Grape Varieties", url: "https://winescholarguild.com/articles/international-white-grape-varieties/" },
+            { label: "Wikipedia – List of grape varieties", url: "https://en.wikipedia.org/wiki/List_of_grape_varieties" }
+        ],
+        grapes: internationalWhites
     },
     {
         id: "spain",
