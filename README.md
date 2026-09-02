@@ -1,20 +1,25 @@
-# 🍷 Red Wine Grape Variety Guesser
+# 🍷 Wine Grape Variety Guesser
 
-An interactive web application for learning and testing your knowledge of classic red wine grape varieties.
+An interactive web application for learning and testing your knowledge of internationally known red grapes and country-specific local wine varieties.
 
 ## Features
 
 - **Interactive Quiz Game**: Test your knowledge by identifying grape varieties based on their characteristics and aromas
-- **14 Popular Red Wine Grapes**: Learn about the most iconic red wine grape varieties from around the world
+- **International Reds Quiz**: Learn 14 iconic red wine grape varieties from around the world
+- **10 Country Subgames**: Explore local red and white grapes from Spain, Italy, Portugal, France, Greece, Croatia, Hungary, Ukraine, Germany, and Poland
 - **Comprehensive Reference Guide**: Detailed information about each grape variety including:
+  - Color
   - Origin
   - Body, tannins, and acidity levels
   - Key aromas and flavor profiles
   - Unique characteristics
+- **Traceable Sources**: Country reference guides include source links for the grape datasets
 - **Beautiful, Responsive Design**: Works seamlessly on desktop and mobile devices
 - **GitHub Pages Compatible**: Pure HTML, CSS, and JavaScript - no build process required
 
-## Grape Varieties Included
+## Quiz Modes
+
+### International Reds
 
 1. **Cabernet Sauvignon** - The "king of red wine grapes" from Bordeaux
 2. **Merlot** - Soft and approachable with velvety texture
@@ -30,6 +35,19 @@ An interactive web application for learning and testing your knowledge of classi
 12. **Pinotage** - South Africa's unique signature grape
 13. **Mourvèdre (Monastrell)** - Bold Mediterranean variety
 14. **Primitivo** - Italian Zinfandel from sunny Puglia
+
+### Country Subgames
+
+- **Spain**: regional grapes such as Mencía, Bobal, Monastrell, Albariño, Godello, and Xarel·lo
+- **Italy**: grapes such as Aglianico, Nero d'Avola, Montepulciano, Fiano, Verdicchio, and Arneis
+- **Portugal**: grapes such as Touriga Nacional, Baga, Castelão, Arinto, Encruzado, and Fernão Pires
+- **Non-international France**: grapes such as Tannat, Mondeuse, Négrette, Savagnin, Picpoul, and Melon de Bourgogne
+- **Greece**: grapes such as Xinomavro, Agiorgitiko, Assyrtiko, Moschofilero, and Malagousia
+- **Croatia**: grapes such as Plavac Mali, Babić, Teran, Pošip, Graševina, and Malvazija Istarska
+- **Hungary**: grapes such as Furmint, Hárslevelű, Juhfark, Kékfrankos, Kadarka, and Cserszegi Fűszeres
+- **Ukraine**: grapes such as Odesa Black, Telti-Kuruk, Sukholymanskyi Bilyi, Citron Magaracha, and Zagrey
+- **Germany**: grapes such as Spätburgunder, Dornfelder, Riesling, Silvaner, and Scheurebe
+- **Poland**: grapes such as Regent, Rondo, Solaris, Johanniter, Hibernal, and Seyval Blanc
 
 ## How to Use
 
@@ -58,12 +76,13 @@ That's it! No build process or dependencies required.
 
 ## How to Play
 
-1. **Start the Quiz**: The game automatically starts when you load the page
+1. **Choose a Quiz Mode**: The app starts with the International Reds quiz selected by default
 2. **Read the Clues**: Each question shows characteristics and typical aromas of a grape variety
 3. **Make Your Guess**: Choose from four options
 4. **Get Feedback**: See if you're correct and learn the right answer
-5. **Continue**: Complete all 10 questions to see your final score
-6. **Learn More**: Scroll down to view the complete reference guide
+5. **Continue**: Complete all questions in the selected quiz to see your final score
+6. **Switch Regions**: Change the quiz mode at any time to restart with a country-focused subgame
+7. **Learn More**: Scroll down to view the matching reference guide and source links
 
 ## Technologies Used
 
@@ -85,4 +104,4 @@ Contributions are welcome! Feel free to:
 
 ## Acknowledgments
 
-Created for wine enthusiasts and learners who want to deepen their understanding of classic red wine grape varieties.
+Created for wine enthusiasts and learners who want to deepen their understanding of both famous international reds and local grape traditions.

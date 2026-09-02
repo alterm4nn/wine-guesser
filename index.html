@@ -11,24 +11,41 @@
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Red Wine Grape Variety Guesser</title>
+    <title>Wine Grape Variety Guesser</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>🍷 Red Wine Grape Variety Guesser</h1>
-            <p class="subtitle">Test your knowledge of classic red wine grapes</p>
+            <h1>🍷 Wine Grape Variety Guesser</h1>
+            <p class="subtitle">Test your knowledge of international reds and local country varieties</p>
         </header>
 
         <div class="game-container">
             <div class="score-section">
                 <div class="score">Score: <span id="score">0</span>/<span id="total">0</span></div>
-                <button type="button" id="restart-btn" class="btn btn-secondary">Restart Game</button>
+                <div class="game-controls">
+                    <label for="quiz-mode" class="mode-label">Quiz mode</label>
+                    <select id="quiz-mode" class="mode-select">
+                        <option value="international-reds">International Reds</option>
+                        <option value="spain">Spain</option>
+                        <option value="italy">Italy</option>
+                        <option value="portugal">Portugal</option>
+                        <option value="france-local">Non-international France</option>
+                        <option value="greece">Greece</option>
+                        <option value="croatia">Croatia</option>
+                        <option value="hungary">Hungary</option>
+                        <option value="ukraine">Ukraine</option>
+                        <option value="germany">Germany</option>
+                        <option value="poland">Poland</option>
+                    </select>
+                    <button type="button" id="restart-btn" class="btn btn-secondary">Restart Game</button>
+                </div>
             </div>
 
             <div id="question-card" class="question-card">
                 <h2>Identify the Grape Variety</h2>
+                <p id="quiz-description" class="quiz-description"></p>
                 <div class="characteristics">
                     <h3>Key Characteristics:</h3>
                     <ul id="characteristics-list"></ul>
@@ -56,14 +73,15 @@
         </div>
 
         <div class="grape-reference">
-            <h2>Red Wine Grape Varieties Reference Guide</h2>
-            <p class="reference-intro">Learn about 14 popular red wine grape varieties</p>
+            <h2 id="reference-title">Reference Guide</h2>
+            <p id="reference-intro" class="reference-intro"></p>
+            <div id="reference-sources" class="reference-sources"></div>
             
             <div class="grape-grid"></div>
         </div>
 
         <footer>
-            <p>Created for wine enthusiasts | Learn more about classic grape varieties</p>
+            <p>Created for wine enthusiasts | Learn more about classic grapes and local specialties</p>
         </footer>
     </div>
 
