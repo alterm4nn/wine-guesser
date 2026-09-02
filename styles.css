@@ -304,6 +304,10 @@ header h1 {
     color: #555;
 }
 
+.reference-sources:empty {
+    display: none;
+}
+
 .reference-sources p {
     margin-bottom: 10px;
     font-weight: 600;
