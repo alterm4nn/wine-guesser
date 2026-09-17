@@ -87,7 +87,7 @@ const internationalReds = [
             "Medium to high acidity",
             "Deep purple color",
             "Varies by climate",
-            "Uses a different regional name in Australia",
+            "Known as Shiraz in Australia",
             "Cooler climates produce elegant, peppery wines"
         ],
         aromas: [
@@ -139,7 +139,7 @@ const internationalReds = [
             "Medium acidity",
             "Often high alcohol",
             "Bold and fruity",
-            "Genetically identical to a well-known southern Italian counterpart",
+            "Genetically identical to Italian Primitivo",
             "Can produce both jammy reds and rosé"
         ],
         aromas: [
@@ -216,7 +216,7 @@ const internationalReds = [
             "Medium acidity",
             "Fruity and spicy",
             "Excellent for blending",
-            "Often referenced under a different Iberian name",
+            "Known as Garnacha in Spain",
             "Key component of Châteauneuf-du-Pape"
         ],
         aromas: [
@@ -322,7 +322,7 @@ const internationalReds = [
             "Medium to medium-plus acidity",
             "Deep, dark color",
             "Requires hot climate to ripen",
-            "Carries different regional names in Spain and Australia",
+            "Known as Monastrell in Spain, Mataro in Australia",
             "Key component of GSM blends with Grenache and Syrah"
         ],
         aromas: [
@@ -350,7 +350,7 @@ const internationalReds = [
             "Medium, balancing acidity",
             "Deeply colored",
             "Often high alcohol in warm climates",
-            "The Italian expression of a grape widely known from California",
+            "Same grape as Zinfandel, Italian expression",
             "Sun-ripened southern Italian style"
         ],
         aromas: [
@@ -386,7 +386,7 @@ const internationalWhites = [
 
 const spainGrapes = [
     grape("Tempranillo", "Red", "North-central Spain, probably the upper Ebro (Rioja/Navarra). A natural cross of Albillo Mayor × Benedicto. Known as Tinta del País, Tinto Fino, Cencibel, Ull de Llebre, Tinta de Toro — and Tinta Roriz/Aragonez in Portugal.", "Medium to full", "medium, fine-grained", "medium to low", ["Early ripening (the name means \"little early one\"), thick-skinned, low natural acidity that makes altitude and cool nights essential", "Takes oak exceptionally well — American oak in traditional Rioja, French in modern Ribera", "Ages for decades in its best forms"], ["Strawberry", "red plum", "dried fig", "tomato leaf", "With oak: vanilla", "coconut", "dill", "leather", "tobacco", "Mature examples turn to dried cherry", "cigar box", "balsamic"], "Spain's national red and one of the world's great vinous chameleons. Rioja gives perfume and finesse, Ribera del Duero gives density and structure, Toro gives brute power, La Mancha gives volume. The modern debate is between the traditional *Gran Reserva* model — long American-oak ageing, tertiary complexity, released mature — and the fruit-forward, French-oak, single-vineyard style. Both are legitimate. If you want to understand Spain in one grape, this is it."),
-    grape("Garnacha Tinta", "Red", "Aragón, north-east Spain, almost certainly Cariñena/Campo de Borja. Spread to Sardinia (Cannonau) and southern France (Grenache Noir) with the Crown of Aragón.", "Medium to full", "low to medium, soft", "low", ["Late ripening, drought- and wind-resistant, high sugar accumulation — 15% alcohol arrives easily", "Pale to medium colour that oxidises and fades quickly", "Old bush vines on poor schist or slate give concentration the grape cannot manage on fertile flats", "Notable for multiple color mutations and closely named regional variants"], ["Ripe strawberry", "raspberry", "red plum", "orange peel", "Warmer sites: kirsch", "dried fig", "liquorice", "Age brings tar", "tobacco leaf", "dried herbs"], "For fifty years Garnacha was Spain's workhorse — bulk red, rosé, blending material to fatten Tempranillo. The revival has been one of the most striking stories in European wine: Priorat proved it could produce world-class wine on *llicorella* slate; Gredos then proved it could be pale, high-toned and almost Burgundian at 900m; Campo de Borja and Calatayud supply the value. Old-vine Garnacha is now among the best-value serious wine anywhere."),
+    grape("Garnacha Tinta", "Red", "Aragón, north-east Spain, almost certainly Cariñena/Campo de Borja. Spread to Sardinia (Cannonau) and southern France (Grenache Noir) with the Crown of Aragón.", "Medium to full", "low to medium, soft", "low", ["Late ripening, drought- and wind-resistant, high sugar accumulation — 15% alcohol arrives easily", "Pale to medium colour that oxidises and fades quickly", "Old bush vines on poor schist or slate give concentration the grape cannot manage on fertile flats", "A serial mutator: Garnacha Blanca, Garnacha Peluda, Garnacha Tintorera (properly Alicante Bouschet, a different grape)"], ["Ripe strawberry", "raspberry", "red plum", "orange peel", "Warmer sites: kirsch", "dried fig", "liquorice", "Age brings tar", "tobacco leaf", "dried herbs"], "For fifty years Garnacha was Spain's workhorse — bulk red, rosé, blending material to fatten Tempranillo. The revival has been one of the most striking stories in European wine: Priorat proved it could produce world-class wine on *llicorella* slate; Gredos then proved it could be pale, high-toned and almost Burgundian at 900m; Campo de Borja and Calatayud supply the value. Old-vine Garnacha is now among the best-value serious wine anywhere."),
     grape("Monastrell", "Red", "Valencia/Murcia region of eastern Spain. Known as Mourvèdre in France, Mataró in Australia and California.", "Full", "high, firm and rustic", "medium", ["Very late ripening — needs real heat and a long season, which is why it dominates Jumilla, Yecla, Alicante and Bullas", "Small thick-skinned berries, deep colour, high alcohol", "Notoriously reductive in the cellar; needs oxygen management or it turns feral", "Improves markedly with a few years in bottle"], ["Blackberry", "black plum", "black pepper", "thyme and rosemary garrigue", "Its signature markers are a meaty", "gamey", "almost bloody note and warm earth", "Oak adds mocha and smoke"], "Spain's muscular southern red, long dismissed as coarse but transformed by lower yields, earlier picking and better cellar hygiene. Jumilla's ungrafted old bush vines — phylloxera never fully took hold in the sandy soils — are a genuine treasure. Also makes serious dry rosé in Alicante and, blended, forms the M of the GSM triumvirate."),
     grape("Bobal", "Red", "Utiel-Requena, inland Valencia. The name likely derives from Latin *bovale*, for the bull's-head shape of the bunch.", "Medium to full", "medium-high", "high — unusually so for its climate", ["Spain's second most planted red by area yet almost unknown abroad", "Drought-resistant, high-yielding if allowed, deeply coloured, and — critically — retains acidity in heat where Tempranillo and Garnacha collapse", "Old head-trained vines at 700-900m are the source of everything good"], ["Blackberry", "blueberry", "damson", "violet", "A distinct wild-herb and iron/graphite streak", "Rosés show redcurrant and pomegranate"], "The classic case of a bulk grape with an unrealised fine-wine identity. For decades it went into anonymous blending wine and rosé for the north; a small group of Utiel-Requena growers has since shown that old-vine Bobal at altitude produces fresh, structured, faintly wild reds with real ageing capacity. Its natural acidity makes it increasingly interesting as the Spanish interior warms."),
     grape("Mencía", "Red", "North-west Spain — Bierzo, Ribeira Sacra, Valdeorras. DNA has confirmed it is identical to Portugal's Jaen (of the Dão) and unrelated to Cabernet Franc, despite a century of assumption otherwise.", "Light to medium", "medium, fine", "medium-high", ["Early ripening, thin-skinned, vigorous on fertile ground and disappointing there", "On the steep slate and granite terraces of the Sil and Cúa valleys — often ungrafted, often 60-100 years old — it makes something entirely different: pale, aromatic, mineral, structured"], ["Sour cherry", "redcurrant", "pomegranate", "violet", "bay leaf", "crushed slate", "Whole-bunch versions add black pepper and a floral lift", "Age brings graphite", "dried flowers", "undergrowth"], "The engine of Spain's \"Atlantic red\" movement. Growers such as Raúl Pérez and the Palacios family showed from the late 1990s that Bierzo and Ribeira Sacra could produce reds closer in weight and perfume to the northern Rhône or Burgundy than to anything in Castile. Genuinely site-transparent — slate and granite plots taste audibly different. One of Spain's most exciting varieties."),
