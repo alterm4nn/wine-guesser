@@ -759,6 +759,9 @@ const restartBtn = document.getElementById('restart-btn');
 const playAgainBtn = document.getElementById('play-again-btn');
 const quizModeSelect = document.getElementById('quiz-mode');
 const quizDescription = document.getElementById('quiz-description');
+const progressText = document.getElementById('progress-text');
+const progressBar = document.getElementById('progress-bar');
+const progressFill = document.getElementById('progress-fill');
 const referenceTitle = document.getElementById('reference-title');
 const referenceIntro = document.getElementById('reference-intro');
 const referenceSources = document.getElementById('reference-sources');
@@ -803,6 +806,22 @@ function updateScore() {
     totalDisplay.textContent = questionsAsked;
 }
 
+function updateProgress() {
+    const totalQuestions = shuffledGrapes.length;
+    const answeredQuestions = questionsAsked;
+    const remainingQuestions = Math.max(0, totalQuestions - answeredQuestions);
+    const progressPercentage = totalQuestions === 0
+        ? 0
+        : Math.round((answeredQuestions / totalQuestions) * 100);
+    const progressMessage = `Progress: ${answeredQuestions}/${totalQuestions} answered • ${remainingQuestions} left`;
+
+    if (progressText.textContent !== progressMessage) {
+        progressText.textContent = progressMessage;
+    }
+    progressFill.style.width = `${progressPercentage}%`;
+    progressBar.setAttribute('aria-valuenow', String(progressPercentage));
+}
+
 function loadQuestion() {
     if (currentQuestionIndex >= shuffledGrapes.length) {
         showResults();
@@ -843,6 +862,7 @@ function loadQuestion() {
 
     feedbackDiv.classList.add('hidden');
     nextBtn.classList.add('hidden');
+    updateProgress();
 }
 
 function createOptions(correctGrape) {
@@ -888,6 +908,7 @@ function checkAnswer(selectedAnswer, button) {
     feedbackDiv.classList.remove('hidden');
     nextBtn.classList.remove('hidden');
     updateScore();
+    updateProgress();
 }
 
 function nextQuestion() {
