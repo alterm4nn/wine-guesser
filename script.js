@@ -760,6 +760,7 @@ const playAgainBtn = document.getElementById('play-again-btn');
 const quizModeSelect = document.getElementById('quiz-mode');
 const quizDescription = document.getElementById('quiz-description');
 const progressText = document.getElementById('progress-text');
+const progressBar = document.getElementById('progress-bar');
 const progressFill = document.getElementById('progress-fill');
 const referenceTitle = document.getElementById('reference-title');
 const referenceIntro = document.getElementById('reference-intro');
@@ -815,7 +816,7 @@ function updateProgress() {
 
     progressText.textContent = `Progress: ${answeredQuestions}/${totalQuestions} answered • ${remainingQuestions} left`;
     progressFill.style.width = `${progressPercentage}%`;
-    progressFill.parentElement.setAttribute('aria-valuenow', String(progressPercentage));
+    progressBar.setAttribute('aria-valuenow', String(progressPercentage));
 }
 
 function loadQuestion() {
