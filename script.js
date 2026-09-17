@@ -813,8 +813,11 @@ function updateProgress() {
     const progressPercentage = totalQuestions === 0
         ? 0
         : Math.round((answeredQuestions / totalQuestions) * 100);
+    const progressMessage = `Progress: ${answeredQuestions}/${totalQuestions} answered • ${remainingQuestions} left`;
 
-    progressText.textContent = `Progress: ${answeredQuestions}/${totalQuestions} answered • ${remainingQuestions} left`;
+    if (progressText.textContent !== progressMessage) {
+        progressText.textContent = progressMessage;
+    }
     progressFill.style.width = `${progressPercentage}%`;
     progressBar.setAttribute('aria-valuenow', String(progressPercentage));
 }
